@@ -1,6 +1,7 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import { chromeExtension } from "vite-plugin-chrome-extension";
+import eslintPlugin from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,6 +16,7 @@ export default defineConfig({
         }
     },
     plugins: [
-        chromeExtension()
+        chromeExtension(),
+        eslintPlugin()
     ],
 })
