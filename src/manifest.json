@@ -1,0 +1,22 @@
+{
+  "name": "Roblox Server Joiner",
+  "version": "0.2",
+  "manifest_version": 3,
+  "description": "(Beta) Let you join a server with empty / specific player in server. For someone that doesn't want to use BTRoblox",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+        "matches": [
+            "https://www.roblox.com/games/*"
+        ],
+        "all_frames": true,
+        "js": [
+            "content-script.ts"
+        ]
+    }
+  ],
+  "action": {}
+}
